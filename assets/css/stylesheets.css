@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --primary: rgb(59, 224, 38);
+}
+
+#links li a:visited{
+    color: yellow;
+}
+
+#links li a {
+    color: red;
+}
+
+#links li a:hover{
+    color: var(--primary);
+}
+/* Secction 1 */
+
+.s1 div :first-child{
+    color: red;
+}
+
+.s1 div :last-child{
+    color: blue;
+}
+
+/* Secction 2 */
+
+.s2 div :nth-child(odd) {
+ color: red;
+}
+
+.s2 div :nth-child(even) {
+    color: blue;
+}
+
+/* Secction 3 */
+
+.s3 div p:nth-of-type(2){
+    color: red;
+}
+
+.s3 div span:nth-last-child(1){
+    color: blue;
+}
+
+/* Secction 4 */
+
+.s4 div :only-child{
+    color: red;
+}
+
+/* Secction 5 */
+
+.s5 div span:only-of-type {
+    color: blue;
+}
+
+.cuadro{
+    width: 500px;
+    height: 500px;
+    background-color: lime;
+}
+
+.cuadro::before{
+    content: 'div';
+    width: 500px;
+    height: 150px;
+    background-color: magenta;
+    display: block;
+}
+
+.cuadro::after{
+    content: 'ñ';
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: block;
+}
+
+.mail:invalid{
+    border: red 4px double;
+    transition: 0.5s;
+}
+.mail:valid{
+    border: green 4px double;
+    transition: 0.5s;
+}
+
+.mail:required{
+    border:fuchsia 2px solid;
+}
+
+.mail:focus{
+    border: gold 8px solid;
+}

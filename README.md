@@ -1,2 +1,2 @@
-# Practica Uno
- Perfil y prtafolio en html y css
+# Practica Seis
+ Atributos a pseudoelementos en listas
