@@ -1,2 +1,2 @@
-# Practica Uno
- Perfil y prtafolio en html y css
+# Practica siete
+ Perfil y prtafolio con boostrap

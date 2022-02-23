@@ -1,84 +1,137 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
-    <title>titulo de la pagina</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <title>Portafolio Boostrap</title>
 </head>
-
 <body>
-    <header id="home">
-        <div id="siteName">
-            <h1 class="principal">Estamos en vivo !Hola Mundo!</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="#portafolio">Portafolio</a></li>
-                <li>
-                    <a href="https://github.com/Rafa4mendoza" target="_blank">Github</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="welcome" class="box">
-        <article id="aboutMe">
-            <div id="profilePic">
-                <img src="assets/img/profile.jpg" alt="RafaMendozaPerfil" width="300px" height="auto" />
+    <header>
+        <div class="container-fluid bg-light">
+            <div class="row">
+                <div class="col text-secondary">
+                    <h1>Rafael Mendoza</h1>
+                </div>
+                <div class="col d-flex justify-content-end">
+
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" >Github</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Modo obscuro</a>
+                    </li>
+                  </ul>
+                </div>
             </div>
-        <div>
-            <h3>¿Quien soy?</h3>
-            <p>
-                Futurista apasionado de la tecnologia, residente de Piedras Negras Coahuila, trabajando para el mundo.
-            </p>
-            <ul>
-                <li><a href="" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="" class="web"><i class="fas fa-globe"></i></a></li>
-            </ul>
         </div>
-        </article>
-    </section>
-    <main>
-        <section id="portafolio" class="mediumSection">
-            <h2>Portafolio</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, qui?
-            </p>
-        </section>
-    
-    <section id="skillSet" class="mediumSection">
-        <h2>Skill Set</h2>
-        <table border="1px">
+    </header>
+
+    <div class="container-fluid" id="welcome">
+      <div class="row">
+        <div class="col" id="aboutMe">
+          <div id="profilePic">
+            <img src="assets/img/profile.jpg" alt="foto perfil" width="300px" height="auto">
+          </div>
+          <div id="frase">
+            <h3>¿Quien soy?</h3>
+            <p>Futurista apasionado de la tecnologia, residente de Piedras Negras Coahuila, trabajando para el mundo.</p>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h3>Portafolio</h3>
+          <div class="row" id="imgPortafolio">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/web_1.PNG" class="card-img-top" alt="..." id="portafolio1">
+                <div class="card-body">
+                  <p class="card-text">Pagina web responsiva acerca de servicios de nutricion.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/nutri_1.PNG" class="card-img-top" alt="..." id="portafolio2">
+                <div class="card-body">
+                  <p class="card-text">Plataforma para la gestion de personal de nutricion y seguimiento de pacientes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/fuse_1.jpg" class="card-img-top" alt="..." id="portafolio3">
+                <div class="card-body">
+                  <p class="card-text">Plataforma de eventos virtuales para la expociscion de productos tecnologicos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h3>Skill Set</h3>
+          <table class="table table-striped table-hover">
             <thead>
-                <tr>
-                    <td>Numero</td>
-                    <td>Skill</td>
-                    <td>Conocimiento</td>
-                </tr>
+              <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Html</td>
-                    <td>***********</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Css</td>
-                    <td>****</td>
-                </tr>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
             </tbody>
-        </table>
-    </section>
-    </main>
+          </table>
+        </div>
+      </div>
+    </div>
 
-    <script src="https://kit.fontawesome.com/0072c17f15.js" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h3>Contacto</h3>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>    
+    <script src="assets/js/app.js"></script>
 </body>
-
 </html>
