@@ -1,211 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Montserrat:wght@300&family=Patua+One&display=swap');
-/* Fuentes
-    font-family: 'Assistant', sans-serif;
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-family: 'Patua One', cursive;
-*/
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
 
-h1{
-    font-family: 'Assistant', sans-serif;
-}
-
-h2, h3, h4 {
-    font-family: 'Patua One', cursive;
-}
-
-p, a, table{
-    font-family: 'Montserrat', sans-serif;
-}
-
-header{
-    height: auto;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; /*posicion deacuerdo a altura*/
+body{
+    overflow: hidden;
 }
 
 nav{
-    width: auto;
+    top: 90%;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
 
 nav ul li{
     display: inline-block;
     list-style: none;
 }
 
-nav a{
+nav ul a {
     color: white;
     text-decoration: none;
-    display: block;
-    padding: 20px;
-    transition: 0.5s;
 }
-
-nav a:hover{
-    background-color: rgb(238, 153, 25);
-}
-
 main{
-    width: 100%;
+    width: 300vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
 }
+
 section{
-    margin-top: 20px;
-    width: 80%;
-    height: auto;
-    background-color: #333;
-    color: rgb(253, 253, 253);
-    padding: 25px;
-    border-radius: 10px;
-}
-
-/*Clases*/
-
-/*Id*/
-#welcome{
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-    background-image: url(../img/space_background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-/*paralax
-display: flex
-felx-direction: column
-justify-content: flex-end
-align-items: center
-overflow: hidden
-*/
-#profilePic{
-
+#wellcomeSection{
+    animation: sectionWellcome 2s;
 }
 
-#aboutMe ul{
-    margin-top: 5px;
+#wellcomeH1-1{
+    animation: wellcomeMessage 2s 3s;
 }
 
-#aboutMe ul li{
-    display: inline-block;
-    list-style: none;
-    font-size: 20px;
+#wellcomeH1-2{
+    animation: wellcomeMessage 2s 4s;
 }
 
-#aboutMe a{
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    transition: 0.5s;
+#color{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(#87b046, #e38929, #ba2211, #1176ba, #1411ba);
 }
 
-#aboutMe a.facebook :hover{
-    color: rgb(32, 28, 255);
-    transition: 0.5s;
-    font-size: 50px;
-}
-
-#aboutMe a.instagram :hover{
-    color: deeppink;
-    transition: 0.5s;
-    font-size: 50px;
-}
-
-#aboutMe a.web :hover{
-    color: rgb(247, 156, 20);
-    transition: 0.5s;
-    font-size: 50px;
-}
-
-@media (max-width: 640px){
-    header{
-        background-color: #2C3531;
-        flex-direction: column;
+@keyframes sectionWellcome{
+    from{
+        background-color: transparent;
+        height: 0vh;
     }
-    h1{
-        font-size: x-large;
-    }
-    .principal{
-        color: #D1E8E2;
-    }
-    nav a{
-        padding: 5px;
-    }
-
-    nav a:hover{
-        background-color: #FFCB9A;
-    }
-
-    img{
-        width: 150px;
-        border-radius: 100px;
-    }
-
-    section{
-        background-color: #116466;
+    to{
+        background-color: black;
+        height: 100vh;
     }
 }
 
-@media (max-width: 1007px) and (min-width: 641px){
-    header{
-        background-color: #272727;
-        flex-direction: column;
-        align-items: flex-start;
+@keyframes wellcomeMessage{
+    from{
+        display: none;
     }
-
-    .principal{
-        color: #FF6525;
-    }
-
-    nav a{
-        padding: 5px;
-    }
-
-    nav a:hover{
-        background-color: #FFE400;
-    }
-
-    img{
-        width: 200px;
-        border-radius: 30px;
-    }
-
-    main{
-        padding-left: 30px;
-        padding-right: 30px;
-        flex-direction: row;
-    }
-
-    .mediumSection{
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    to{
+        display: block;
     }
 }
