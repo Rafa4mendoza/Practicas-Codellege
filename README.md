@@ -1,2 +1,2 @@
-# Practica Uno
- Perfil y prtafolio en html y css
+# Practica tres
+ Uso de las diferentes estilos de flex
