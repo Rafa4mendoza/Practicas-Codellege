@@ -1,2 +1,2 @@
-# Practica Uno
- Perfil y prtafolio en html y css
+# Practica Nueve
+ Sintaxis y ejercisio de javascript y jQuery
